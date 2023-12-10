@@ -115,7 +115,7 @@ class newSunburst {
 
         // Color Scale
         //vis.color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, vis.data.children.length + 1));
-        vis.color = d3.scaleOrdinal(d3.quantize(t => d3.interpolateReds(t * 5.5 - 0.3), vis.data.children.length + 1));
+        vis.color = d3.scaleOrdinal(d3.quantize(t => d3.interpolateReds(t * 0.8 + 0.3), vis.data.children.length + 1));
 
 
         // Compute Layout
