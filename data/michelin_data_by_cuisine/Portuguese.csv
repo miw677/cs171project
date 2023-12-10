@@ -1,0 +1,3 @@
+,Name,Address,Zip,Location,MinPrice,MaxPrice,Currency,Cuisine,Longitude,Latitude,PhoneNumber,Url,WebsiteUrl,Award,AveragePrice,state_id,state_name,region,General_Category
+76,Adega,"1614 Alum Rock Ave., San Jose, 95116, United States",95116,San Jose,199.0,199.0,USD,"Portuguese, Californian",-121.85845,37.35131,-8593,https://guide.michelin.com/en/california/san-jose/restaurant/adega,https://www.adegarest.com/,1 MICHELIN Star,199.0,CA,California,West,Portuguese
+242,Porto,"1600 W. Chicago Ave., Chicago, 60622, United States",60622,Chicago,175.0,175.0,USD,"Portuguese, Seafood",-87.6674488,41.896121,-5626,https://guide.michelin.com/en/illinois/chicago/restaurant/porto,https://www.bonhommegroup.com/,1 MICHELIN Star,175.0,IL,Illinois,Midwest,Portuguese

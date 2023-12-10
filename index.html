@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finding your next Michelin Star...or Bo-chelin!</title>
+
+    <!-- Load CSS libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;900&italic" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+
+<div class="container" id="fullpage">
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="col">
+            <img src="img/michelin.png" width="200px"></img>
+            <h1>Finding your next Michelin Star</h1>
+            <h3><i>...or Bo-chelin!</i></h3>
+            <p>A star picking experience crafted by Yilin Qi, Grace Guo, Justin Wei</p>
+        </div>
+    </div>
+
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="center" id="introduction">
+            <p>Embark on a culinary adventure to discover the allure of Michelin Star restaurants in the United States. <br/>
+                What distinguishes these dining havens, setting them apart in the world of gastronomy? <br/>
+                Join us on an inspired journey to explore the stars of the American culinary scene. <br/>
+                Dive into the essence of what makes these restaurants not just special, but exceptional. <br/>
+                <br/><b>Let's unravel the mystery and savor the experience together!<br/><br/></b></p>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="center" id="michelin-stars">
+            <p><h3>First, let's learn about what the different types of Michelin awards are!</h3> <br/>
+            <br/>Let's hear from the <a href="https://guide.michelin.com/us/en/article/features/what-is-a-michelin-star">Michelin Guide itself</a>!<br/></p>
+            <div class="container michelin-stars">
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        Bib Gourmand
+                    </div>
+                    <div class="col-9">
+                        Our award for great value, and highlights <span style="color: #cc0000;">simple yet skillful</span> cooking at an <span style="color: #cc0000;">affordable</span> price. <br/>
+                        (But we should also say that we are looking for a high standard of cooking just for a restaurant to be recommended in the MICHELIN Guide.)<br/>
+                    </div>
+                    <hr />
+                    <div class="col-3">
+                        1 Michelin Stars
+                    </div>
+                    <div class="col-9">
+                        Awarded to restaurants using <span style="color: #cc0000;">top quality ingredients</span>, where dishes with distinct flavours are prepared to a consistently high standard. <br/>
+                    </div>
+                    <hr />
+                    <div class="col-3">
+                        2 Michelin Stars
+                    </div>
+                    <div class="col-9">
+                        Awarded when the <span style="color: #cc0000;">personality and talent of the chef</span> are evident in their expertly crafted dishes; their food is refined and inspired.<br/>
+                    </div>
+                    <hr />
+                    <div class="col-3">
+                        3 Michelin Stars
+                    </div>
+                    <div class="col-9">
+                        Our highest award, given for the <span style="color: #cc0000;">superlative cooking</span> of chefs at the peak of their profession; their cooking is elevated to <span style="color: #cc0000;">an art form</span> and some of their dishes are destined to become classics.<br/>
+                    </div>
+                    <hr />
+                    <div class="col-3">
+                        Green Star
+                    </div>
+                    <div class="col-9">
+                        Our <span style="color: #cc0000;">newest award</span>. It was introduced to the MICHELIN Guide France in 2020 and is now featured in every country covered by the MICHELIN Guide. It is awarded to restaurants that are role models when it comes to <span style="color: #cc0000;">sustainable gastronomy</span>.<br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="row d-flex justify-content-center" id="wordCloud">
+            <div><h5 class="center"><b>Variety of Cuisines of Michelin Restaurants</b></h5></div>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="row d-flex justify-content-center" id="mapDiv">
+            <div><h5 class="center"><b>An Overview of All Michelin Restaurants in the U.S.</b></h5></div>
+            <h4 class="map-text">There is only a few states feature Michelin-starred restaurants, with California boasting the highest count of 219. </h4>
+            <p class="map-text">Explore the map by clicking on the clusters to discover detailed information of specific restaurants.
+                Utilize the search bar and dropdown menus to refine your search and uncover specific restaurants."</p>
+            <div class="row d-flex justify-content-center" id="search-container">
+                <input type="text" id="searchInput" placeholder="Enter a Michelin Restaurant name">
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="row d-flex sorting-award" style="width: 15%">
+                <select id="awardDropdown" onchange="filterData()">
+                    <option value="">All Awards</option>
+                    <option value="3 MICHELIN Stars">3 MICHELIN Stars</option>
+                    <option value="2 MICHELIN Stars">2 MICHELIN Stars</option>
+                    <option value="1 MICHELIN Star">1 MICHELIN Star</option>
+                    <option value="Bib Gourmand">Bib Gourmand</option>
+                </select>
+            </div>
+            <div class="row d-flex sorting-region" style="width: 15%">
+                <select id="regionDropdown" onchange="filterData()">
+                    <option value="">All Regions</option>
+                    <option value="West">West</option>
+                    <option value="Northeast">Northeast</option>
+                    <option value="Midwest">Midwest</option>
+                    <option value="South">South</option>
+                </select>
+            </div>
+
+            <div id="leafMapDiv"></div>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="row d-flex justify-content-center" id="sankeyVis">
+            <div class="row">
+                <select id="leftSelection">
+                    <option value="Award" selected>Award</option>
+                    <option value="General_Category">Cuisine Type</option>
+                </select>
+                <select id="rightSelection">
+                    <option value="region" selected>Region</option>
+                    <option value="state_name">State</option>
+                </select>
+
+                <div class="col">
+                    <div class="row" id='sankeyDiv'></div>
+                </div>
+                <div class="col">
+                    <h4 class='sankey-text' style="font-size:28px; margin-top:80px"> Let's inspect the distribution of Michelin restaurants in the US. </h4>
+                    <div class='sankey-text' id="sankey-instruction" style="text-align:left"> <span style="color: #cc0000;">Choose relationships</span> to visualize from the select box. </br>
+                        <span style="color: #c09acb;">Hover over a specific link</span> to see the restaurant distribution in detail.</br> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row shadow p-3 mb-5 bg-white rounded section">
+        <div class="row d-flex justify-content-center" id="starPick">
+            <div class="col-md-3" style="margin-top:50px">
+                <h4 class='starPick-text' style="font-size:28px;">Time to book your flight! Let's plan your next star picking trip.</h4>
+                <hr/>
+                <p>We've analyzed the country-wide distribution of top 8 Michelin restaurant cuisines. <span style="color: #cc0000;">Choose a category</span> to reveal which state has the most variety of restaurants given your cuisine of interest.</p>
+                <p>Each color denotes a specific category under your chosen cuisine type. You can <span style="color: #cc0000;">hover over the blocks to view restaurants info</span>.</p>
+                <p>You can <span style="color: #cc0000;">click on a legend</span> from your and view that sub-category's distribution only! Click anywhere on the page to reset your view.</p>
+                <p>Have fun exploring!</p>
+            </div>
+            <div class="col-md-9">
+                <select id="selection" onchange="categoryChange()">
+                    <option value="Contemporary" selected>Contemporary</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="American">American</option>
+                    <option value="Thai">Thai</option>
+                </select>
+                <div id='starPickDiv' style="min-height:700px;">
+                    <!-- starPick viz -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="sunburstDiv">
+                        <!-- Sunburst chart will be inserted here -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="margin-top:300px">
+                        <h5 class='sunburst-text' style="font-size:23px; text-align:center;">Wonder which region, state, awards are dominant in Michelin guide?</h5>
+                        <hr/>
+                        <p class='sunburst-text' >Start exploring by <span style="color: #cc0000;">clicking on any segment</span>!</p>
+                        <p class='sunburst-text' >Each layer representing a different level of distinction from the Michelin Guide. <p>
+                        <p class='sunburst-text' ><span style="color: #cc0000;">Hover</span> for more information on the composition.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+        <div class="row center" id="intro-bochelin">
+            <div class="center-container">
+                <img src="img/star.svg" id="svg-star">
+            </div>
+            <p>As we turn our focus towards Boston, a curious question arises:<br/>
+                <b>Why does this vibrant city not boast a single Michelin Star restaurant?</b><br/>
+                This intriguing puzzle invites a deeper exploration, and we're thrilled to have you join us on this culinary quest. <br/>
+                To add to the adventure, we've meticulously curated a selection of Boston's finest dining establishments<br/><br/>
+                <b>'Bo-chelin' list</b><br/><br/>
+                Each offering an experience that rivals the prestigious Michelin standards. <br/>
+                Let's embark on this gastronomic journey through Boston's hidden gems and uncover the flavors that make this city uniquely delectable.</p>
+        </div>
+    </div>
+
+    <div class="row center shadow p-3 mb-5 bg-white rounded section">
+    <button id="showLocationButton">Show What's Around My Current Location</button>
+        <button id="showSECButton">Show What's Around SEC</button>
+        <div class="row d-flex justify-content-center" id="bochelinDiv"></div>
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- D3 and Libraries -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script> <!--sankey-->
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+
+<!-- OWN JS -->
+<script src="js/map.js"></script>
+<script src="js/newSunburst.js"></script>
+<script src="js/cloud.js"></script>
+<script src="js/main.js"></script>
+<script src="js/sankeyVis.js"></script>
+<script src="js/starPickVis.js"></script>
+<script src="js/bostonmap.js"></script>
+
+
+</body>
+</html>

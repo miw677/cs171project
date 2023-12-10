@@ -1,0 +1,73 @@
+﻿restaurant_name,restaurant_ID,restaurant_address,restaurant_tag,rating,price,review_number,unique_reviewer,reviews_Jan_19,reviews_Feb_19,reviews_Mar_19,reviews_Apr_19,reviews_May_19,reviews_Jun_19,reviews_Jul_19,reviews_Aug_19,reviews_Jan_20,reviews_Feb_20,reviews_Mar_20,reviews_Apr_20,reviews_May_20,reviews_Jun_20,reviews_Jul_20,reviews_Aug_20,restaurant_neighborhood,GIS_ID,CT_ID_10,lat,lon
+140 Supper Club,6,"138 St James Ave,Boston, MA 02116,","Diners,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,401087000,25025010600,42.3490411,-71.078908
+Ana's Place,104,"79 Hancock,Boston, MA 02125,","African,",5,$ ,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester,1502689000,25025091500,42.3129658,-71.0677309
+Atrium Cafe,180,"260 Longwood Ave,Boston, MA 02115,","Cafes,",5,NA,2,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,Boston,401882000,25025081001,42.3369544,-71.1067017
+BONAPITA,228,"75 Spring St,Boston, MA 02132,","Mediterranean,Bakeries,",5,NA,85,85,13,4,3,7,5,5,5,8,2,1,2,0,3,2,3,2,West Roxbury,2008907000,25025130402,42.278754,-71.1659003
+Beau's Seafood,303,"9 Fish Pier St E,Boston, MA 02210,","Seafood,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,602673002,25025060600,42.3510142,-71.0400901
+Bep Bui,316,"95 Freeport St,Dorchester, MA 02122,","Vietnamese,",5,NA,6,6,0,0,0,0,0,0,0,0,0,0,1,1,0,2,1,1,Dorchester,1500294000,25025091600,42.3051699,-71.0601998
+Blend,361,"1310 Dorchester Ave,Dorchester, MA 02122,","Bars,Burgers,Music Venues,",5,NA,3,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,Dorchester,1500312000,25025091600,42.3058579,-71.0611277
+Blue Hill Cafe,370,"491 Blue Hill Ave,Boston, MA 02121,","Dominican,Spanish,",5,NA,2,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,Dorchester,1202454000,25025082100,42.3083769,-71.0862439
+Boston Fried Chicken,436,"1198 Blue Hill Ave,Boston, MA 02126,","Fast Food,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,Mattapan,1403959000,25025101102,42.2835549,-71.0939848
+Boston Pocket & Deli,449,"682 Tremont St,Boston, MA 02118,","Delis,Sandwiches,",5,NA,13,13,0,1,0,0,0,0,0,2,1,0,1,1,0,0,0,0,Boston,900471000,25025070500,42.3410173,-71.0792559
+Boston Speed Dog,453,"42 Newmarket Sq,Roxbury, MA 02118,","Food Trucks,Hot Dogs,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,Boston,801022001,25025080100,42.3286575,-71.0680841
+Cafe Colombia,572,"17 Meridian St,Boston, MA 02128,","Cafes,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,105685000,25025050600,42.3735958,-71.041856
+Cafe Suisse,594,"1 Ave De Lafayette,Boston, MA 02111,","Fondue,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,304500000,25025070101,42.3534311,-71.0635449
+Café 716,626,"716 Columbus Ave,Boston, MA 02120,","Coffee & Tea,Sandwiches,",5,$ ,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Roxbury Crossing,901417000,25025080601,42.3376814,-71.0878647
+Chinese Spaghetti Factory,770,"83 Newmarket Sq,Roxbury, MA 02118,","Chinese,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,801022030,25025080100,42.3291127,-71.069913
+City Hall Deli,810,"1 CIty Hall Plz,Boston, MA 02108,","Delis,",5,NA,2,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Boston,302615000,25025030300,42.3604104,-71.0603373
+Constitution Lobster Clambake,850,"8 Seafood Way,Boston, MA 02210,","Seafood,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,602674003,25025981202,42.3489493,-71.0336889
+Court Café,876,"3 Pemberton Square,Fl 2,Suffolk County Court House,Boston, MA 02108,","American (Traditional),Delis,Food Stands,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,302722000,25025030300,42.3598389,-71.0637265
+Doña Habana,1039,"11 Melnea Cass Blvd,Roxbury, MA 02119,","Cuban,Lounges,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Roxbury,800900100,25025080100,42.3320727,-71.0761337
+Eagle Hill Cafe,1060,"65 Meridian St,Boston, MA 02128,","Coffee & Tea,Breakfast & Brunch,Sandwiches,",5,NA,8,8,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,1,Boston,105738000,25025050600,42.3718816,-71.0413711
+Eats and Treats Creperie,1078,"166 Brighton Ave,Brighton, MA 02135,","Creperies,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Brighton,2100890000,25025000704,42.3529546,-71.1353993
+El Palmar Restaurant,1100,"290 Bennington St,Boston, MA 02128,","Latin American,",5,$ ,9,9,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,Boston,100089000,25025050901,42.3790009,-71.0311564
+El Rinconcito,1110,"226 Sumner St,Boston, MA 02128,","Colombian,",5,NA,3,3,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,Boston,105364000,25025050400,42.3687303,-71.0416033
+Energize,1126,"618 Washington St,Brighton, MA 02135,","Juice Bars & Smoothies,Vegan,Organic Stores,",5,$ ,109,109,2,1,2,2,3,1,3,1,2,0,1,0,0,0,1,1,Brighton,2204493000,25025000302,42.3504628,-71.1705225
+Florian Hall,1221,"55 Hallet St,Boston, MA 02124,","American (Traditional),Venues & Event Spaces,",5,NA,4,4,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,Dorchester Center,1604181000,25025100700,42.2823936,-71.0502068
+Fourdee Planning,1252,"75 Frederick St,Boston, MA 02127,","Restaurants,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,700367000,25025060800,42.3330528,-71.0560939
+Greek International Food Market,1372,"5204 Washington St,West Roxbury, MA 02132,","Greek,Specialty Food,International Grocery,",5,$$ ,79,79,1,0,0,0,1,0,0,0,0,1,1,4,3,1,1,0,West Roxbury,2011746001,25025130406,42.2607706,-71.1596425
+Harry's Cheese and Cold Cuts,1435,"98 Blackstone St,Boston, MA 02109,","Delis,Cheese Shops,",5,$ ,54,54,1,0,0,1,0,0,0,1,2,1,0,1,1,0,0,0,Boston,303341000,25025030300,42.3615218,-71.0590266
+Hood Milk Bottle,1481,"308 Congress St,Boston, MA 02210,","Hot Dogs,",5,NA,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,602635000,25025060600,42.3519775,-71.0522588
+Hummingbird Grill,1504,"736 Blue Hill Ave,Dorchester, MA 02121,","Caribbean,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester,1402772000,25025092400,42.2998025,-71.0887302
+Jamaica Mi Hungry,1567,"225 Centre St,Boston, MA 02130,","Caribbean,",5,NA,34,33,0,0,0,0,0,0,0,0,3,4,0,1,2,6,11,2,Jamaica Plain,1601273000,25025092200,42.3230502,-71.1014528
+Juice and Jazz Cafe,1618,"501B Washington St,Dorchester, MA 02124,","Juice Bars & Smoothies,Coffee & Tea,Cafes,",5,$ ,25,25,2,0,0,1,2,1,0,0,0,1,0,0,0,0,0,0,Dorchester Center,1700459000,25025092300,42.2941509,-71.0746456
+La Casa Del Pandebono,1698,"271 Meridian St,Boston, MA 02128,","Bakeries,Salvadoran,Colombian,",5,NA,16,15,0,0,0,4,1,0,1,0,1,1,2,2,0,0,0,0,Boston,105961000,25025050200,42.3762824,-71.0415146
+Levi's Restaurant & Lounge,1782,"323 Washington St,Boston, MA 02121,","Caribbean,Seafood,",5,$ ,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester,1401441000,25025091900,42.299866,-71.0771197
+Loose Leafs,1826,"775 Commonwealth Ave,Boston University,Boston, MA 02215,","Salad,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,2100360000,25025010103,42.3505279,-71.1206907
+Los Arrieros,1832,"13 Meridian St,Boston, MA 02128,","Restaurants,",5,NA,3,3,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Boston,105684000,25025050600,42.3745903,-71.0414344
+Lulu Green,1859,"246 W Broadway,Boston, MA 02127,","Vegan,Middle Eastern,Juice Bars & Smoothies,",5,$$ ,24,23,0,0,0,0,0,0,0,0,1,18,3,1,0,0,0,0,Boston,600423000,25025060600,42.3395706,-71.0542785
+MR Tamole,1877,"31 Germania St,Boston, MA 02130,","Mexican,Food Stands,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,Jamaica Plain,1102158000,25025120301,42.3141534,-71.1059777
+Mangú,1903,"264 Hyde Park Ave,Boston, MA 02130,","Dominican,",5,NA,9,9,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,Jamaica Plain,1904839000,25025110103,42.2925206,-71.1201131
+Marliave Espresso Bar,1924,"51 Province St,Boston, MA 02108,","Coffee & Tea,Sandwiches,Breakfast & Brunch,",5,NA,2,2,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,Boston,304712000,25025070101,42.3568874,-71.0628212
+Mobilehomeboston,2052,"220 Clarendon St,Boston, MA 02116,","Food Stands,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,501297000,25025010702,42.351115,-71.078172
+Outtakes Quick Cuisine,2281,"88 E Newton St,Boston, MA 02118,","Cafes,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,900475000,25025070500,42.3370113,-71.0731318
+PIT STOP,2293,"695 Truman Hwy,Boston, MA 02136,","Sandwiches,Soup,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,Hyde Park,1810585001,25025140202,42.2525526,-71.1213853
+Padaria Brasil,2304,"125 Harvard Ave,Boston, MA 02134,","Bakeries,Brazilian,",5,NA,3,3,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Allston,2100895000,25025000704,42.3522952,-71.1347194
+Phantom Gourmet Food Festival 2018,2392,"PO Box 269,47 Harvard Ave,Boston, MA 02134,","Food Stands,Arts & Entertainment,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Allston,2101509000,25025000704,42.3543889,-71.1354041
+Recreo Coffee & Roasterie,2556,"1 City Hall Square,Fl 3,Boston, MA 02108,","Coffee & Tea,Sandwiches,Breakfast & Brunch,",5,NA,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,302615000,25025030300,42.3604166,-71.0605894
+Recreo Coffee & Roasterie,2557,"1876 Centre St,West Roxbury, MA 02132,","Coffee & Tea,Coffee Roasteries,Cafes,",5,$$ ,98,97,2,1,1,3,2,0,1,0,2,1,0,2,1,4,1,1,West Roxbury,2005767000,25025130200,42.2857901,-71.1579668
+Regina Pizza,2572,"11 Thacher St,Boston, MA 02113,","Pizza,",5,NA,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,Boston,301381000,25025030100,42.3654423,-71.0594535
+Roscoe's Quincy Market,2646,"Quincy Market,Boston, MA 02108,","Food Stands,",5,NA,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,Boston,303670000,25025030300,42.3602086,-71.0573537
+Royal Chicken,2662,"2360 Washington St,Boston, MA 02119,","Fast Food,Chicken Shop,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Roxbury,903152000,25025080601,42.329363,-71.0870324
+SK Cafe,2678,"2 Copley Pl,Boston, MA 02116,","Cambodian,",5,NA,4,4,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,Boston,400985000,25025010600,42.3480764,-71.0805507
+Samira's Homemade,2722,"468 Harrison Ave,Boston, MA 02118,","Lebanese,Food Stands,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,306539000,25025071201,42.3424698,-71.06772
+Sammy Carlo's Delicatessen & Catering,2723,"567 Bennington St,East Boston, MA 02128,","Italian,American (Traditional),Delis,",5,$ ,46,46,0,0,0,0,3,0,0,2,0,0,0,0,1,1,0,0,Boston,100862000,25025051000,42.3824814,-71.0207091
+Sobrinos Market,2862,"416 Geneva Ave,Dorchester, MA 02122,","Grocery,Delis,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester,1500674000,25025092000,42.3009965,-71.0695996
+South Bay Cafe,2882,"20 Bradston St,Boston, MA 02118,","American (New),Salad,Soup,",5,NA,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,801029100,25025080100,42.3344127,-71.0702728
+Steve Connolly Seafood Co,2934,"34 Newmarket Sq,Roxbury, MA 02118,","Seafood,Seafood Markets,",5,$ ,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,801022004,25025080100,42.3293644,-71.0676807
+Subway,2973,"1866 Centre St,West Roxbury, MA 02132,","Sandwiches,",5,$ ,6,6,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,West Roxbury,2005754000,25025130200,42.2857714,-71.1575443
+Taco Party,3056,"28-38 Trinity Pl,Trinity Place,Boston, MA 02116,","Food Stands,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,Boston,401088000,25025010600,42.3488851,-71.077835
+Tawakal Halal Cafe,3120,"389 Maverick St,Boston, MA 02128,","African,Halal,Somali,",5,$$ ,79,79,8,4,2,2,1,5,5,2,2,1,2,2,0,5,1,2,Boston,105162000,25025051200,42.3657235,-71.0316207
+Terra Cuisine,3136,"35 Westgate Rd,Boston, MA 02467,","Caterers,American (New),",5,NA,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Chestnut Hill,2007011200,25025130100,42.2999306,-71.1693598
+The Breakfast Spot,3178,"651 Warren St,Boston, MA 02121,","Breakfast & Brunch,",5,NA,4,4,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester,1202544001,25025082100,42.3097853,-71.0856109
+The Center Cafe,3193,"850 Harrison Ave,Boston Medical Center,Boston, MA 02128,","Cafeteria,",5,$ ,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,801420000,25025071101,42.3353026,-71.0772727
+The Spaht,3301,"155 Southampton St,Boston, MA 02121,","Food Trucks,Chicken Wings,Caterers,",5,NA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester,801021004,25025080100,42.331364,-71.0698852
+Tony's Market,3354,"4381 Washington St,Roslindale, MA 02131,","Grocery,Delis,Butcher,",5,$$ ,49,49,1,0,0,0,2,1,1,1,1,1,1,2,0,0,4,0,Roslindale,2000408000,25025110502,42.2821695,-71.1355666
+Zia Gianna,3606,"1735-1741 Dorchester Ave,Boston, MA 02124,","Coffee & Tea,Italian,Bakeries,",5,$$ ,69,68,1,0,0,4,2,2,2,0,2,2,1,0,0,0,0,0,Dorchester Center,1601327000,25025100500,42.2909755,-71.0656444
+Boston Baddest Burger,422,"Stuart And Trinity,Boston, MA 02116,","Burgers,Sandwiches,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,401087000,25025010600,42.3485877,-71.0779624
+Deria Express Cafe,980,"1121 Harrison Ave,Boston, MA 02119,","Somali,",5,NA,7,7,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Roxbury,802472000,25025080401,42.3306525,-71.0842954
+Fruit/Vegetable Cart Stand,1271,"Summer St & Federal St,Boston, MA 02111,","Food Stands,",5,NA,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Boston,304199000,25025070101,42.3537055,-71.0605991
+Murl's Kitchen,2101,"143 Washington St,Dorchester Center,Boston, MA 02121,","Caribbean,",5,NA,11,11,0,0,1,1,0,0,1,0,1,1,4,0,2,0,1,2,Dorchester,1401053000,25025090100,42.3044591,-71.0822411
+Tianjin Bun House,3329,"1095 Commonwealth Ave,Boston, MA 02215,","Chinese,",5,NA,5,5,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,Boston,2100477000,25025000802,42.3525888,-71.1280258
+Top Griyo Restaurant,3357,"984 Blue Hill Ave,Dorchester Center, MA 02124,","Restaurants,",5,NA,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dorchester Center,1403132001,25025100100,42.2902487,-71.0916842
+Uri's Bakery,3434,"Vfw Pkwy,West Roxbury, MA 02132,","Bakeries,Kosher,",5,NA,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,West Roxbury,2004130000,25025130100,42.2829294,-71.1741866
