@@ -4,6 +4,7 @@
 
 **Description:** We are a group of three foodies who are genuinely passionate about tasty and memorable restaurants. When we arrived in Boston, we realized that the city does not have any Michelin restaurants. Motivated by a curiosity as to why this is the case, we want to explore current Michelin restaurants as well as top-rated restaurants in Boston.
 
+**Live Site:** https://miw677.github.io/cs171project
 
 ## Prerequisites
 
