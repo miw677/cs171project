@@ -53,8 +53,17 @@ class newSunburst {
                     let awardsGroup = d3.group(awards, d => d.Award);
 
                     awardsGroup.forEach((entries, awardName) => {
-                        let awardValue = entries.length;
-                        state.children.push({name: awardName, value: awardValue});
+                        let award = {name: awardName, children: []};
+                        let restaurantGroup = d3.group(entries, d => d.Name);
+
+                        restaurantGroup.forEach((entry, restaurantName) => {
+                           award.children.push({name: restaurantName, value: 1});
+                        });
+
+                        state.children.push(award);
+
+                        //let awardValue = entries.length;
+                        //state.children.push({name: awardName, value: awardValue});
                     });
 
                     region.children.push(state);
@@ -151,14 +160,13 @@ class newSunburst {
         // add tooltip
         vis.path
             .on("mouseover", function(event, d) {
-                vis.tooltip.transition()
-                    .duration(800)
+                vis.tooltip
                     .style('opacity', 0.9);
 
                 let count = d.value;
                 let percentage = ((count / vis.totalValue) * 100).toFixed(2);
                 let tooltipContent = '';
-                let title = d.depth === 1 ? 'Region' : d.depth === 2 ? 'State' : 'Award';
+                let title = d.depth === 1 ? 'Region' : d.depth === 2 ? 'State' : d.depth === 3 ? 'Award' : 'Name';
 
                 tooltipContent = `<div style="font-size: 16px;"><strong>${title}: ${d.data.name}</strong><br>Total restaurants: ${count}<br>Percentage:${percentage}%<br></div>`;
 
@@ -168,6 +176,11 @@ class newSunburst {
                 } else if (d.depth === 3) {
                     let stateData = d.parent.data.name;
                     let regionData = d.parent.parent.data.name;
+                    tooltipContent += `<div style="font-size: 16px;">Region: ${regionData}<br>State: ${stateData}<br></div>`;
+                } else if (d.depth === 4) {
+                    let stateData = d.parent.parent.data.name;
+                    let regionData = d.parent.parent.parent.data.name;
+                    tooltipContent = `<div style="font-size: 16px;"><strong>${title}: ${d.data.name}</strong></div>`;
                     tooltipContent += `<div style="font-size: 16px;">Region: ${regionData}<br>State: ${stateData}<br></div>`;
                 }
 
@@ -182,11 +195,10 @@ class newSunburst {
                     .style('box-shadow', '0 0 5px rgba(0, 0, 0, 0.5)');
             })
             .on("mouseout", function() {
-                vis.tooltip.transition()
-                    .duration(500)
+                vis.tooltip
                     .style("opacity", 0)
-                    //.style('left', '0px')
-                    //.style('top', '0px');
+                    .style('left', '0px')
+                    .style('top', '0px');
             });
 
 
@@ -210,7 +222,6 @@ class newSunburst {
             .attr("fill", "none")
             .attr("pointer-events", "all")
             .on("click", clicked);
-
 
         // Handle zoom on click.
         function clicked(event, p) {

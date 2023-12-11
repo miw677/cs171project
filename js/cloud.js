@@ -70,7 +70,7 @@ class WordCloud{
         // Scale for color
         vis.colorScale = d3.scaleSequential()
             .domain([0, d3.max(vis.displayData, d => d.size) * 0.2])
-            .range(["#ffcccc", "#b30000"]);
+            .range(["#b30000", "black"]);
 
         // Word cloud
         vis.layout = d3.layout.cloud()

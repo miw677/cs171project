@@ -35,8 +35,12 @@ class StarPickVis{
             .paddingInner(0.1);
         vis.yScale = d3.scaleLinear()
             .range([vis.height, 0]);
-        //vis.colorScale = d3.scaleOrdinal(["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6","#ffffcc","#e5d8bd","#fddaec","#f2f2f2"]);
-        vis.colorScale =  d3.scaleOrdinal(d3.quantize(d3.interpolateReds, 15));
+        vis.colorScale = d3.scaleOrdinal([
+            "#f17d75", "#8eafd2", "#b7dfb1",
+            "#d6b4d9", "#fea97a", "#fcf869",
+            "#dfc89c", "#fac6e5", "#e8e8e8"
+        ]);
+        //vis.colorScale =  d3.scaleOrdinal(d3.quantize(d3.interpolateReds, 15));
 
 
         // set up axes
