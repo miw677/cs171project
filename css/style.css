@@ -110,7 +110,7 @@ img {
 
 #wordCloud {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     --bs-gutter-x: 0;
 }
 

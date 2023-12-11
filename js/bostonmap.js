@@ -19,7 +19,7 @@ class BostonMap {
     initVis () {
         let vis = this;
 
-        vis.map = L.map(vis.parentElement).setView(vis.latLong, 15)
+        vis.map = L.map(vis.parentElement).setView(vis.latLong, 14)
 
         L.Icon.Default.imagePath = 'img/';
 

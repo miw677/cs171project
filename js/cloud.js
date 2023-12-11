@@ -17,7 +17,7 @@ class WordCloud{
         // Margin Conventions
         vis.margin = {top: 20, right: 50, bottom: 20, left: 90};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 650;
+        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom - 50;
 
         //SVG Drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -106,8 +106,8 @@ class WordCloud{
 
             if (vis.inMainCat === true) {
                 vis.wordLabels.on("click", function (event, d) {
-                        vis.filterCategory(d.text)
-                    });
+                    vis.filterCategory(d.text)
+                });
                 // Title
                 vis.title = vis.svg.append("text")
                     .attr("x", vis.width / 2)
