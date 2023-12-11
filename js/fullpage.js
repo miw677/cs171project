@@ -1127,7 +1127,7 @@
       },
       //scrolling
       css3: true,
-      scrollingSpeed: 700,
+      scrollingSpeed: 1400,
       autoScrolling: true,
       fitToSection: true,
       fitToSectionDelay: 600,

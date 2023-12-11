@@ -116,7 +116,7 @@ class LeafMap {
         vis.filteredData.forEach(restaurant => {
             // Create a marker for each restaurant
             let marker = L.marker([restaurant.Latitude, restaurant.Longitude])
-                .bindPopup(`<b>${restaurant.Name}</b><br>${restaurant.Address}`);
+                .bindPopup(`<b>${restaurant.Name}</b><br>${restaurant.Address}<br><a href="${restaurant.WebsiteUrl}" target="_blank">${restaurant.WebsiteUrl}</a>`);
 
             // Add marker to the cluster group instead of the map
             vis.markersCluster.addLayer(marker);

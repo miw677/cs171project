@@ -11,7 +11,7 @@ class newSunburst {
 
         // Set size
         vis.width = 800;
-        vis.height = 2000;
+        vis.height = 1800;
         vis.radius = vis.width / 4;
 
         // Arc Generator
@@ -199,6 +199,7 @@ class newSunburst {
             .join("text")
             .attr("dy", "0.35em")
             .style("font-size", d => d.depth === 1 ? "30px" : d.depth === 2 ? "22px" : "19px")
+            .style("font-family", "\"AvenirNext-Regular\", \"Helvetica Neue Light\", sans-serif")
             .attr("fill-opacity", d => +labelVisible(d.current))
             .attr("transform", d => labelTransform(d.current))
             .text(d => d.data.name);
