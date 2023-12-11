@@ -31,10 +31,8 @@ class SankeyVis {
                 "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
         // Color scale for nodes
-        //vis.colorScale = d3.scaleOrdinal(d3.schemeCategory10);
-        vis.colorScale = d3.scaleOrdinal(
-            d3.quantize(t => d3.interpolateReds(t * 0.6 + 0.1), 10)
-        );
+        vis.colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
 
         // Initialize the Sankey diagram
         vis.sankey = d3.sankey()
